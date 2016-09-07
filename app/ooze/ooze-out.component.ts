@@ -1,27 +1,12 @@
 import { Component, ElementRef, Input, Pipe } from '@angular/core';
-import { DomSanitizationService } from '@angular/platform-browser';
 
 
 import { OozeOutputService } from './ooze-output.service';
 
-
-@Pipe({name: 'safe'})
-class Safe {
-	constructor(private sanitizer:DomSanitizationService) {
-	}
-
-	transform(html) {
-		return this.sanitizer.bypassSecurityTrustHtml(html);
-	}
-}
-
-
 @Component({
 	selector: 'ooze-out',
-	pipes: [ Safe ],
 	styles: ['.scroll-down-div {height:230px;overflow-y:auto;border:1px solid #ccc;border-radius:4px;padding:6px;}'],
-	template: '<div class="scroll-down-div" [innerHtml]="text|safe"></div>'
-//	template: '<div class="scroll-down-div" [innerHtml]="text"></div>'
+	template: '<div class="scroll-down-div" [innerHtml]="text"></div>'
 })
 
 export class OozeOutComponent {

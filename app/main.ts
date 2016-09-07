@@ -1,18 +1,12 @@
-import { bootstrap } from '@angular/platform-browser-dynamic';
-import { HTTP_PROVIDERS } from '@angular/http';
-
-import 'rxjs/add/operator/map';
-
-import { disableDeprecatedForms, provideForms } from '@angular/forms';
-
-import { AppComponent } from './app.component';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app.module';
 
 
-//-- import { enableProdMode } from '@angular/core';
-//-- enableProdMode();
+ import { enableProdMode } from '@angular/core';
+ enableProdMode();
+
+platformBrowserDynamic().bootstrapModule( AppModule );
 
 
-bootstrap(AppComponent, [
-	HTTP_PROVIDERS,
-	disableDeprecatedForms(), provideForms()
-]);
+
+

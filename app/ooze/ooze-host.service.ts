@@ -3,6 +3,7 @@ import { Http, Response } from '@angular/http';
 
 import { OozeOutputService } from './ooze-output.service';
 
+import 'rxjs/add/operator/map';
 
 @Injectable()
 export class OozeHostService {

@@ -2,11 +2,9 @@ import { Component } from '@angular/core';
 
 import { CommandService } from '../command/command.service';
 import { OozeHostService } from './ooze-host.service';
-import { OozeHistoryDirective } from './ooze-history.directive';
 
 @Component({
 	selector: 'ooze-in',
-	directives: [ OozeHistoryDirective ],
 	template: `
 <form style="margin-top:1em;">
 	<div class="form-group">
