@@ -11,6 +11,7 @@
     "lite": "lite-server",
     "postinstall": "typings install",
     "tsc": "tsc",
+    "tsc:v": "tsc -v",
     "tsc:w": "tsc -w",
     "typings": "typings"
   },
