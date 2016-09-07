@@ -9,6 +9,7 @@ import { OozeModule } from './ooze/ooze.module';
 @NgModule({
 	imports:         [ BrowserModule, FormsModule, OozeModule ],
 	declarations:    [ AppComponent ],
+	providers:       [ CommandService ],
 	bootstrap:       [ AppComponent ]
 })
 export class AppModule { }
