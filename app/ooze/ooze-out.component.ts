@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, Pipe } from '@angular/core';
+import { Component, ElementRef, Input } from '@angular/core';
 
 
 import { OozeOutputService } from './ooze-output.service';
